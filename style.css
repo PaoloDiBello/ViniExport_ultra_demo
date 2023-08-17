@@ -88,6 +88,10 @@ img {
   color: #888;
 }
 
+.rsPrice {
+  padding-bottom: 2px;
+}
+
 .rsPriceSummary {
   text-align: center;
   color: #444444;
@@ -97,6 +101,9 @@ img {
   margin-top: 20px;
 }
 
+.rsTotalPrice {
+  padding-left: 2px;
+}
 .rsBuyButton {
   width: 150px;
   font-size: 12px;
@@ -169,6 +176,7 @@ div {
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.45s ease-in-out;
+  background-image: url("https://mrwine.it/9667-large_default/bottega-il-vino-dell-amore-moscato.jpg");
 }
 
 .wineLabelBox {
