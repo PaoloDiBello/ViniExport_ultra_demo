@@ -1,60 +1,125 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Market place - Viniexport</title>
-	
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container-fluid">
-  <!---Wine Box-->
-  <div class="wineBox">
-    <!---Wine Box Col Left-->
-<div class="wineBoxColLx">
- <div class="zoomWineLabel">
-  <div class="pull-right"><i class="fa fa-plus-square pull-right" data-toggle="modal" data-target="#zoomImageModal"></i>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!---Wine Box-->
+      <div class="wineBox">
+        <!---Wine Box Col Left-->
+        <div class="wineBoxColLx">
+          <div class="zoomWineLabel">
+            <div class="pull-right">
+              <i
+                class="fa fa-plus-square pull-right"
+                data-toggle="modal"
+                data-target="#zoomImageModal"
+              ></i>
+            </div>
+            <div class="wineLabelBox">
+              <div
+                class="wineLabelBoxBg img-fluid"
+                style="
+                  background-image: url('https://mrwine.it/9667-large_default/bottega-il-vino-dell-amore-moscato.jpg');
+                "
+              ></div>
+
+              <a href="#">Product Sheet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wineBoxColRx">
+          <div class="wineName">Rubrato<br /><small>Campania</small></div>
+          <div class="winePrice">$ 5.52<span class="vatSpan">+Vat</span></div>
+
+          <!--onmouseover=switchVisible()-->
+          <div class="buy-button">
+            ADD TO CART <i class="fa fa-shopping-cart"></i>
+          </div>
+
+          <div class="rsBuyNowContainer" style="">
+            Select quantity :
+            <div class="rsQuantityContainer">
+              <input
+                type="number"
+                name="quantity_bottle"
+                value="1"
+                min="1"
+                step="1"
+                class="rsQuantity wineQuantity"
+              /><input
+                type="hidden"
+                class="rsPrice"
+                name="prezzo_vendita"
+                value="18.45"
+              /><input type="hidden" name="etichetta_id" value="80388" /><input
+                type="hidden"
+                name="quantita_per_contenitore"
+                value="1"
+              />&nbsp;<img
+                src="https://mrwine.it/9667-large_default/bottega-il-vino-dell-amore-moscato.jpg"
+                class="wineBottleIcon"
+              />
+            </div>
+            <div class="rsPriceSummary">
+              Subtotal <span class="rsTotalBottles">3</span><br />Bottles:
+              <strong>$</strong>&nbsp;<span class="rsTotalPrice">55.35</span>
+            </div>
+            <div class="rsBuyButton">
+              ADD TO CART <i class="fa fa-shopping-cart"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="winemakerName" title="Mezzacorona">Mezzacorona</div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="zoomImageModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="zoomImageModalLabel"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-content-bg">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">ï¿½</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="wineLabelBox">
-<div class="wineLabelBoxBg img-fluid" style="background-image:url('http://www.viniexport.com/trading/storage/2017/January/week4/60273_RUBRATO-AGLIANICO.png');"> </div>
-    
-   <a href="#">Product Sheet</a> 
-   </div>
-    
-  </div>
-  
-  </div>
- 
-    <div class="wineBoxColRx">
-     
-    <div class="wineName">Rubrato<br><small>Campania</small></div>
-    <div class="winePrice">$ 5.52<span class="vatSpan">+Vat</span></div>
- 
- <!--onmouseover=switchVisible()-->
-    <div class="buy-button" >ADD TO CART <i class="fa fa-shopping-cart"></i>  </div>
-           
- <div class="rsBuyNowContainer" style="">Select quantity :<div class="rsQuantityContainer"><input type="number" name="quantity_bottle" value="1" min="1" step="1" class="rsQuantity wineQuantity"><input type="hidden" class="rsPrice" name="prezzo_vendita" value="18.45"><input type="hidden" name="etichetta_id" value="80388"><input type="hidden" name="quantita_per_contenitore" value="1">&nbsp;<img src="http://www.viniexport.com/trading/vximg/wineBottleIcon.png" class="wineBottleIcon"></div><div class="rsPriceSummary">Subtotal <span class="rsTotalBottles">3</span><br>Bottles: <strong>$</strong>&nbsp;<span class="rsTotalPrice">55.35</span></div><div class="rsBuyButton">ADD TO CART <i class="fa fa-shopping-cart"></i></div></div>   
-    
-    </div>    
-
-
-
-    <div class="clearfix"></div>
-  
-    <div class="winemakerName" title="Mezzacorona">Mezzacorona</div>
-   
-    </div>
-  
-
-  <div class="modal fade" id="zoomImageModal" tabindex="-1" role="dialog" aria-labelledby="zoomImageModalLabel"><div class="modal-dialog" role="document"><div class="modal-content modal-content-bg"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body"></div></div></div></div>
-  
-</div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-     
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  
-  
+</html>
